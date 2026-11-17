@@ -135,7 +135,7 @@ export function DocumentManager({ docs }: { docs: DocRow[] }) {
           <button
             type="button"
             onClick={() => fileInput.current?.click()}
-            className="mt-4 rounded-md bg-ink px-3.5 py-2 text-sm font-medium text-white"
+            className="mt-4 rounded-lg bg-tab px-4 py-2.5 text-sm font-semibold text-ink hover:bg-[#ff9a3d]"
           >
             Choose files
           </button>

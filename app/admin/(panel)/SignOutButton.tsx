@@ -13,7 +13,7 @@ export function SignOutButton() {
         router.replace("/admin/login");
         router.refresh();
       }}
-      className="text-sm font-medium underline-offset-2 hover:underline"
+      className="font-medium text-white underline-offset-4 hover:underline"
     >
       Sign out
     </button>

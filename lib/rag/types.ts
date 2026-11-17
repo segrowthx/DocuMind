@@ -17,7 +17,10 @@ export interface Source {
   title: string;
   page: number | null;
   url: string | null; // external URL for web pages; file sources are served via /api/sources
+  /** The passage text the answer was built from (trimmed). */
   snippet: string;
+  /** Cosine similarity of the passage to the question, 0..1. */
+  similarity?: number;
 }
 
 export interface ChatTurn {

@@ -22,7 +22,8 @@ export function toSources(chunks: RetrievedChunk[]): { sources: Source[]; contex
       title: c.document_title,
       page: c.page,
       url: c.source_url,
-      snippet: c.content.slice(0, 280),
+      snippet: c.content.length > 900 ? `${c.content.slice(0, 900).trimEnd()}…` : c.content,
+      similarity: Math.round(c.similarity * 1000) / 1000,
     });
     const where = c.page ? `${c.document_title}, page ${c.page}` : c.document_title;
     blocks.push(`[${n}] (${where})\n${c.content}`);

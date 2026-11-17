@@ -43,3 +43,11 @@ next-env.d.ts
 
 # supabase cli local state
 supabase/.temp/
+
+# impeccable working files (design system files in .impeccable/ are committed)
+.impeccable/review/
+.impeccable/sketches/
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/decision/
+.impeccable/hook.cache.json

@@ -16,7 +16,10 @@ function LoginForm() {
     e.preventDefault();
     setBusy(true);
     setError(null);
-    const { error } = await supabaseBrowser().auth.signInWithPassword({ email, password });
+    const { error } = await supabaseBrowser().auth.signInWithPassword({
+      email,
+      password,
+    });
     setBusy(false);
     if (error) {
       setError("That email and password don't match an admin account.");
@@ -28,9 +31,18 @@ function LoginForm() {
   }
 
   return (
-    <form onSubmit={submit} className="w-full max-w-sm rounded-xl border border-rule bg-sheet p-6">
+    <form
+      onSubmit={submit}
+      className="relative w-full max-w-sm rounded-md bg-sheet py-8 pr-7 pl-14 text-ink"
+    >
+      <div className="holes" aria-hidden>
+        <i />
+        <i />
+      </div>
       <h1 className="text-xl font-bold">Sign in to DocuMind admin</h1>
-      <p className="mt-1 text-sm text-slate">Manage documents, conversations and leads.</p>
+      <p className="mt-1 text-sm text-slate">
+        Manage documents, conversations and leads.
+      </p>
       <label className="mt-6 block text-sm font-medium">
         Email
         <input
@@ -54,7 +66,10 @@ function LoginForm() {
         />
       </label>
       {error && <p className="mt-3 text-sm text-danger">{error}</p>}
-      <button disabled={busy} className="mt-6 w-full rounded-md bg-ink py-2.5 font-medium text-white disabled:opacity-60">
+      <button
+        disabled={busy}
+        className="mt-6 w-full rounded-lg bg-tab py-3 font-semibold text-ink hover:bg-[#ff9a3d] disabled:bg-rule disabled:text-slate"
+      >
         {busy ? "Signing in…" : "Sign in"}
       </button>
     </form>
@@ -63,7 +78,7 @@ function LoginForm() {
 
 export default function LoginPage() {
   return (
-    <main className="grid min-h-dvh place-items-center px-4">
+    <main className="grid min-h-dvh place-items-center bg-cover px-4">
       <Suspense>
         <LoginForm />
       </Suspense>

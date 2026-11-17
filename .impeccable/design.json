@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-17T00:00:00Z",
+  "title": "Design System: DocuMind",
+  "extensions": {
+    "colorMeta": {
+      "cover": { "role": "primary", "displayName": "Binder Board Navy", "canonical": "#14254A", "tonalRamp": ["#0A1328", "#14254A", "#22365F", "#2E4573", "#4C5873", "#8492B0", "#C9D3E6", "#EEF1F6"] },
+      "cover-2": { "role": "primary", "displayName": "Raised Board", "canonical": "#22365F", "tonalRamp": ["#0A1328", "#14254A", "#22365F", "#2E4573", "#4C5873", "#8492B0", "#C9D3E6", "#EEF1F6"] },
+      "cover-3": { "role": "primary", "displayName": "Lifted Board", "canonical": "#2E4573", "tonalRamp": ["#0A1328", "#14254A", "#22365F", "#2E4573", "#4C5873", "#8492B0", "#C9D3E6", "#EEF1F6"] },
+      "cover-ink": { "role": "primary", "displayName": "Board Ink", "canonical": "#C9D3E6", "tonalRamp": ["#0A1328", "#14254A", "#22365F", "#2E4573", "#4C5873", "#8492B0", "#C9D3E6", "#EEF1F6"] },
+      "tab": { "role": "secondary", "displayName": "Index Tab Orange", "canonical": "#F5821F", "tonalRamp": ["#4A2402", "#7A3B04", "#A84F06", "#D96A10", "#F5821F", "#FF9A3D", "#FCC79A", "#FDEBDB"] },
+      "tab-hover": { "role": "secondary", "displayName": "Pressed Tab Orange", "canonical": "#FF9A3D", "tonalRamp": ["#4A2402", "#7A3B04", "#A84F06", "#D96A10", "#F5821F", "#FF9A3D", "#FCC79A", "#FDEBDB"] },
+      "tab-ink": { "role": "secondary", "displayName": "Tab Ink", "canonical": "#A84F06", "tonalRamp": ["#4A2402", "#7A3B04", "#A84F06", "#D96A10", "#F5821F", "#FF9A3D", "#FCC79A", "#FDEBDB"] },
+      "tab-soft": { "role": "secondary", "displayName": "Tab Wash", "canonical": "#FDEBDB", "tonalRamp": ["#4A2402", "#7A3B04", "#A84F06", "#D96A10", "#F5821F", "#FF9A3D", "#FCC79A", "#FDEBDB"] },
+      "sheet": { "role": "neutral", "displayName": "Sheet White", "canonical": "#FFFFFF", "tonalRamp": ["#1F2633", "#39445A", "#4C5873", "#7A859C", "#ABB4C6", "#DFE4EE", "#EEF1F6", "#FFFFFF"] },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#14254A", "tonalRamp": ["#0A1328", "#14254A", "#22365F", "#2E4573", "#4C5873", "#8492B0", "#C9D3E6", "#EEF1F6"] },
+      "slate": { "role": "neutral", "displayName": "Slate", "canonical": "#4C5873", "tonalRamp": ["#1F2633", "#39445A", "#4C5873", "#7A859C", "#ABB4C6", "#DFE4EE", "#EEF1F6", "#FFFFFF"] },
+      "rule": { "role": "neutral", "displayName": "Sheet Rule", "canonical": "#DFE4EE", "tonalRamp": ["#1F2633", "#39445A", "#4C5873", "#7A859C", "#ABB4C6", "#DFE4EE", "#EEF1F6", "#FFFFFF"] },
+      "paper": { "role": "neutral", "displayName": "Paper", "canonical": "#EEF1F6", "tonalRamp": ["#1F2633", "#39445A", "#4C5873", "#7A859C", "#ABB4C6", "#DFE4EE", "#EEF1F6", "#FFFFFF"] },
+      "danger": { "role": "neutral", "displayName": "Danger", "canonical": "#B42318", "tonalRamp": ["#4A0D09", "#7A1610", "#B42318", "#D8423A", "#EB7A72", "#F5ABA5", "#FAD3CF", "#FDEEEC"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The tagline lockup on the navy cover, once per page, in the logo's title case." },
+      "stat": { "displayName": "Stat", "purpose": "The 20 of 20 / 5 of 5 result row on the cover." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings on each sheet; 1.875rem below 640px." },
+      "title": { "displayName": "Title", "purpose": "Step headings, sub-sections, chat header, login heading." },
+      "body-lead": { "displayName": "Body lead", "purpose": "The paragraph under the tagline, max 44ch." },
+      "body": { "displayName": "Body", "purpose": "Chat answers (max 62ch) and section prose." },
+      "label": { "displayName": "Label", "purpose": "Index tab labels, captions, table heads, chat subtitle." },
+      "chip": { "displayName": "Chip", "purpose": "Citation numbers inside the orange chip." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The single easing of the system (CSS variable --ease-out)." },
+      { "name": "tab-reach", "value": "transform, width, background-color, color 220ms var(--ease-out)", "purpose": "One slide per cited index tab; also idle tab hover. Removed under prefers-reduced-motion." },
+      { "name": "reach-ramp", "value": "8px + 22px * clamp((similarity - 0.3) / 0.45, 0, 1)", "purpose": "How far a cited tab reaches beyond 9.5rem; match strength made visible." },
+      { "name": "caret", "value": "opacity blink, 1s steps(1) infinite", "purpose": "Orange streaming caret; off under reduced motion." },
+      { "name": "reading", "value": "opacity 0.35 to 1, 1.2s var(--ease-out) infinite, 150ms stagger", "purpose": "Searching-documents dots; off under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px", "purpose": "Punch holes appear; headline steps up; lead fields go side by side." },
+      { "name": "lg", "value": "1024px", "purpose": "Two-column binder; tabs move from top-edge strip to right-edge column; section edge tabs appear." },
+      { "name": "xl", "value": "1280px", "purpose": "How-it-works steps go four across." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Orange fill with navy text; the one primary action in a region (Ask, Sign in, Open the widget demo).",
+      "html": "<button class=\"ds-btn-primary\">Ask</button>",
+      "css": ".ds-btn-primary { background: var(--tab, #F5821F); color: var(--ink, #14254A); font-family: var(--font-poppins, Poppins), sans-serif; font-size: 15px; font-weight: 600; padding: 12px 20px; border: 0; border-radius: 8px; cursor: pointer; transition: background-color 150ms; } .ds-btn-primary:hover { background: #FF9A3D; } .ds-btn-primary:focus-visible { outline: 2px solid var(--tab, #F5821F); outline-offset: 2px; } .ds-btn-primary[aria-disabled=true] { opacity: .6; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action on a sheet: 2px ink stroke, paper fill on hover.",
+      "html": "<button class=\"ds-btn-outline\">Open the admin</button>",
+      "css": ".ds-btn-outline { background: transparent; color: var(--ink, #14254A); font-family: var(--font-poppins, Poppins), sans-serif; font-size: 15px; font-weight: 600; padding: 10px 20px; border: 2px solid var(--ink, #14254A); border-radius: 8px; cursor: pointer; } .ds-btn-outline:hover { background: var(--paper, #EEF1F6); } .ds-btn-outline:focus-visible { outline: 2px solid var(--tab, #F5821F); outline-offset: 2px; }"
+    },
+    {
+      "name": "Ask Input",
+      "kind": "input",
+      "refersTo": "input-ask",
+      "description": "The chat question field: 2px ink stroke, Tab Ink border and caret on focus.",
+      "html": "<textarea class=\"ds-input-ask\" rows=\"1\" placeholder=\"Ask a question…\"></textarea>",
+      "css": ".ds-input-ask { display: block; width: 100%; resize: none; background: var(--sheet, #FFFFFF); color: var(--ink, #14254A); font-family: var(--font-poppins, Poppins), sans-serif; font-size: 15px; padding: 10px 14px; border: 2px solid var(--ink, #14254A); border-radius: 8px; outline: none; caret-color: var(--tab-ink, #A84F06); } .ds-input-ask::placeholder { color: var(--slate, #4C5873); } .ds-input-ask:focus { border-color: var(--tab-ink, #A84F06); }"
+    },
+    {
+      "name": "Form Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Lead form, login and admin fields: 1px rule border, ink on focus.",
+      "html": "<input class=\"ds-input-field\" placeholder=\"you@company.com\" />",
+      "css": ".ds-input-field { width: 100%; background: var(--sheet, #FFFFFF); color: var(--ink, #14254A); font-family: var(--font-poppins, Poppins), sans-serif; font-size: 14px; padding: 8px 12px; border: 1px solid var(--rule, #DFE4EE); border-radius: 6px; outline: none; } .ds-input-field:focus { border-color: var(--ink, #14254A); }"
+    },
+    {
+      "name": "Citation Chip",
+      "kind": "chip",
+      "refersTo": "citation-chip",
+      "description": "Orange number chip inline in an answer; hover draws an ink outline, click opens the passage.",
+      "html": "<p class=\"ds-answer\">You can choose a 50 percent refund or a free transfer<button class=\"ds-chip\">1</button>.</p>",
+      "css": ".ds-answer { font-family: var(--font-poppins, Poppins), sans-serif; font-size: 15px; line-height: 1.7; color: var(--ink, #14254A); } .ds-chip { display: inline-grid; place-items: center; min-width: 1.35rem; margin: 0 2px; padding: 0 4px; background: var(--tab, #F5821F); color: var(--ink, #14254A); border: 0; border-radius: 4px; font: 600 11px/1.35rem var(--font-poppins, Poppins), sans-serif; font-variant-numeric: tabular-nums; vertical-align: 0.1em; cursor: pointer; } .ds-chip:hover { outline: 2px solid var(--ink, #14254A); } .ds-chip:focus-visible { outline: 2px solid var(--tab, #F5821F); outline-offset: 2px; }"
+    },
+    {
+      "name": "Index Tabs",
+      "kind": "nav",
+      "refersTo": "index-tab",
+      "description": "One tab per document overhanging the sheet's right edge; cited tabs turn orange and reach out by match strength.",
+      "html": "<div class=\"ds-binder\"><div class=\"ds-binder-sheet\"></div><nav class=\"ds-tabs\"><button class=\"ds-tab\">Pricing</button><button class=\"ds-tab ds-tab-cited\" style=\"--reach:22px\">Refunds<span>Page 2</span></button><button class=\"ds-tab\">FAQ</button></nav></div>",
+      "css": ".ds-binder { position: relative; display: flex; background: var(--cover, #14254A); padding: 24px 0 24px 24px; } .ds-binder-sheet { position: relative; z-index: 1; width: 180px; height: 220px; background: var(--sheet, #FFFFFF); border-radius: 6px 0 0 6px; } .ds-tabs { display: flex; flex-direction: column; justify-content: space-between; padding: 24px 0; } .ds-tab { display: flex; flex-direction: column; justify-content: center; width: 9.5rem; margin-left: -8px; padding: 8px 12px 8px 20px; min-height: 48px; text-align: left; background: var(--cover-2, #22365F); color: var(--cover-ink, #C9D3E6); font: 500 13px/1.25 var(--font-poppins, Poppins), sans-serif; border: 0; border-radius: 0 8px 8px 0; cursor: pointer; transition: transform 220ms cubic-bezier(0.16,1,0.3,1), width 220ms cubic-bezier(0.16,1,0.3,1), background-color 220ms cubic-bezier(0.16,1,0.3,1), color 220ms cubic-bezier(0.16,1,0.3,1); } .ds-tab:hover { width: 10rem; background: var(--cover-3, #2E4573); color: #fff; } .ds-tab-cited, .ds-tab-cited:hover { width: calc(9.5rem + var(--reach)); background: var(--tab, #F5821F); color: var(--ink, #14254A); } .ds-tab span { margin-top: 2px; font-weight: 700; font-variant-numeric: tabular-nums; } .ds-tab:focus-visible { outline: 2px solid var(--tab, #F5821F); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-tab { transition: none; } }"
+    },
+    {
+      "name": "Punched Sheet",
+      "kind": "card",
+      "refersTo": "sheet",
+      "description": "White working surface on the navy cover with a 48px punched margin of cover-colored holes.",
+      "html": "<div class=\"ds-cover\"><section class=\"ds-sheet\"><div class=\"ds-holes\"><i></i><i></i><i></i></div><h2>How it finds the page</h2><p>No passage, no answer.</p></section></div>",
+      "css": ".ds-cover { background: var(--cover, #14254A); padding: 24px; } .ds-sheet { position: relative; background: var(--sheet, #FFFFFF); color: var(--ink, #14254A); border-radius: 6px; padding: 40px 40px 40px 64px; font-family: var(--font-poppins, Poppins), sans-serif; } .ds-sheet h2 { margin: 0; font-size: 1.875rem; font-weight: 700; letter-spacing: -0.02em; } .ds-sheet p { margin: 12px 0 0; color: var(--slate, #4C5873); font-size: 16px; line-height: 1.625; } .ds-holes { position: absolute; inset-block: 0; left: 0; width: 3rem; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding-block: clamp(2.5rem, 14%, 7rem); pointer-events: none; } .ds-holes > i { display: block; width: 1.375rem; height: 1.375rem; border-radius: 999px; background: var(--cover, #14254A); }"
+    },
+    {
+      "name": "Passage Panel",
+      "kind": "card",
+      "refersTo": "passage-panel",
+      "description": "The cited passage, docked above the input when a tab or chip is pressed.",
+      "html": "<aside class=\"ds-passage\"><p class=\"ds-passage-title\"><span>1</span>Refund Policy, p. 2</p><p class=\"ds-passage-match\">71% match to your question</p><p class=\"ds-passage-body\">Cancellations 7 to 13 calendar days before the start date receive a 50 percent refund or a free transfer.</p><a href=\"#\">Open the document at page 2</a></aside>",
+      "css": ".ds-passage { background: var(--paper, #EEF1F6); border: 1px solid var(--rule, #DFE4EE); border-radius: 8px; padding: 12px 16px; color: var(--ink, #14254A); font-family: var(--font-poppins, Poppins), sans-serif; } .ds-passage-title { margin: 0; font-size: 14px; font-weight: 600; } .ds-passage-title span { display: inline-block; margin-right: 8px; padding: 0 6px; background: var(--tab, #F5821F); border-radius: 4px; font-size: 11px; line-height: 20px; font-variant-numeric: tabular-nums; } .ds-passage-match { margin: 2px 0 0; font-size: 12px; color: var(--slate, #4C5873); } .ds-passage-body { margin: 8px 0 0; font-size: 13.5px; line-height: 1.625; } .ds-passage a { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 600; color: var(--tab-ink, #A84F06); text-underline-offset: 4px; }"
+    },
+    {
+      "name": "Admin Divider Tabs",
+      "kind": "nav",
+      "refersTo": "admin-tab",
+      "description": "Section tabs on the navy header's bottom edge; the active tab takes the paper fill and merges into the page.",
+      "html": "<div class=\"ds-admin-head\"><nav class=\"ds-admin-nav\"><a class=\"ds-admin-tab\" aria-current=\"page\" href=\"#\">Documents</a><a class=\"ds-admin-tab\" href=\"#\">Conversations</a><a class=\"ds-admin-tab\" href=\"#\">Leads</a></nav></div><div class=\"ds-admin-page\"></div>",
+      "css": ".ds-admin-head { background: var(--cover, #14254A); padding: 16px 16px 0; } .ds-admin-nav { display: flex; gap: 6px; } .ds-admin-tab { padding: 10px 16px 12px; border-radius: 8px 8px 0 0; background: var(--cover-2, #22365F); color: var(--cover-ink, #C9D3E6); font: 500 14.5px var(--font-poppins, Poppins), sans-serif; text-decoration: none; transition: background-color 150ms, color 150ms; } .ds-admin-tab:hover { background: var(--cover-3, #2E4573); color: #fff; } .ds-admin-tab[aria-current=page] { background: var(--paper, #EEF1F6); color: var(--ink, #14254A); } .ds-admin-tab:focus-visible { outline: 2px solid var(--tab, #F5821F); outline-offset: 2px; } .ds-admin-page { background: var(--paper, #EEF1F6); height: 40px; }"
+    },
+    {
+      "name": "Lead Form",
+      "kind": "custom",
+      "refersTo": "lead-form",
+      "description": "Inline name-and-email offer under a buying-intent answer; ink button, slate decline.",
+      "html": "<form class=\"ds-lead\"><p>Want an advisor to send you a quote?</p><div class=\"ds-lead-row\"><input placeholder=\"Your name\" /><input placeholder=\"you@company.com\" /></div><div class=\"ds-lead-actions\"><button type=\"button\" class=\"ds-lead-send\">Contact me</button><button type=\"button\" class=\"ds-lead-no\">No thanks</button></div></form>",
+      "css": ".ds-lead { background: var(--sheet, #FFFFFF); border: 1px solid rgba(20,37,74,.8); border-radius: 8px; padding: 12px; font: 400 14px var(--font-poppins, Poppins), sans-serif; color: var(--ink, #14254A); } .ds-lead p { margin: 0 0 10px; font-weight: 500; } .ds-lead-row { display: flex; gap: 8px; } .ds-lead-row input { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid var(--rule, #DFE4EE); border-radius: 6px; outline: none; font: inherit; } .ds-lead-row input:focus { border-color: var(--ink, #14254A); } .ds-lead-actions { display: flex; align-items: center; gap: 12px; margin-top: 10px; } .ds-lead-send { background: var(--ink, #14254A); color: #fff; border: 0; border-radius: 6px; padding: 8px 12px; font: 500 14px var(--font-poppins, Poppins), sans-serif; cursor: pointer; } .ds-lead-no { background: none; border: 0; color: var(--slate, #4C5873); font: inherit; cursor: pointer; } .ds-lead-no:hover { text-decoration: underline; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Policy Binder",
+    "overview": "DocuMind is the company's own policy binder, opened at the page that answers you. The navy board cover is the ground; white punched sheets are the only working surfaces; one flat index tab per document hangs off the sheet's edge. When an answer cites a document, that tab slides further out and turns brand orange, and pressing it opens the exact passage used. Every visual decision serves that one claim: the answer came from a page you can check.\n\nThe system is flat and physical without imitating paper texture. Depth is told by layering (cover, then sheet, then tab overhanging the sheet) and by color steps within the navy family, never by shadow. The marketing page speaks loudly (an 800-weight tagline at monumental size on the cover); the widget and admin use the same materials at an Operate register: denser, smaller type, the same tabs and sheets.\n\nOrange is scarce and meaningful. It marks what was cited, what is active, and the one primary action. Everything else is navy, white and cool grey.",
+    "keyCharacteristics": [
+      "Navy board cover as page ground; white punched sheet as the working surface.",
+      "Index tabs, one per document, whose reach encodes match strength.",
+      "Orange only for cited, active and primary; always carrying navy text.",
+      "Poppins throughout, 800 down to 400.",
+      "Flat: no shadows, bevels or gradients."
+    ],
+    "rules": [
+      { "name": "The Navy-On-Orange Rule", "body": "An orange fill always carries navy (ink) text, never white. When orange must itself be text or a stroke on white, use Tab Ink (#A84F06), never the brand orange. The one exception is display-size orange type on the navy cover (the tagline's \"With Sources.\"), where the brand orange reads at large size.", "section": "colors" },
+      { "name": "The Earned Orange Rule", "body": "Orange means cited, active or primary. A tab is orange only because the latest answer cited its document; a button is orange only because it is the single primary action in its region. Decorative orange is a bug.", "section": "colors" },
+      { "name": "The Ground Shows Through Rule", "body": "Punch holes and anything \"cut out\" of a sheet are filled with the cover navy, not a grey or a shadow.", "section": "colors" },
+      { "name": "The One Family Rule", "body": "Poppins only. Hierarchy comes from weight and size, never from a second display face or from uppercase tracking.", "section": "typography" },
+      { "name": "The Tabular Count Rule", "body": "Every number that is compared or counted (stats, citation numbers, page numbers, table cells, step numerals) uses tabular figures.", "section": "typography" },
+      { "name": "The Flat Binder Rule", "body": "No shadow, bevel, inner glow or gradient on any element. If something needs to read as \"in front\", give it a different flat tone or put it on the sheet.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do put every working surface on a white punched sheet over the navy cover (or the paper ground in the admin).",
+      "Do give every document its own index tab, and let a citation pull that tab out by the similarity ramp (8px to 30px of reach).",
+      "Do carry navy (#14254A) text on every orange fill, and switch to Tab Ink (#A84F06) whenever orange has to be text or a stroke on white.",
+      "Do reserve orange for cited, active and primary: cited tabs, citation chips, the one primary button, the focus ring.",
+      "Do animate tab reach with one 220ms ease-out slide (`cubic-bezier(0.16, 1, 0.3, 1)`) and remove it under `prefers-reduced-motion`.",
+      "Do use Poppins for everything, with weight carrying the hierarchy, and tabular figures for every count.",
+      "Do put the logo on a white label plate wherever it sits on navy."
+    ],
+    "donts": [
+      "Don't add shadows, bevels, glows or gradients to anything; depth is cover, sheet and tab.",
+      "Don't use orange decoratively, for idle tabs, for secondary buttons or as a background wash behind content.",
+      "Don't put white text on orange, or the brand orange (#F5821F) as small text on white.",
+      "Don't shade or texture the punch holes; they are flat circles of the cover color.",
+      "Don't introduce a second typeface or uppercase-tracked labels."
+    ]
+  }
+}
