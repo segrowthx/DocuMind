@@ -1,0 +1,22 @@
+[
+  { "id": 1, "question": "How much does the PMP Exam Prep Bootcamp cost?", "expected": "$1,895 per student; the PMI exam fee is not included.", "doc": "Pricing Sheet" },
+  { "id": 2, "question": "Is the PMI exam fee included in the PMP bootcamp price?", "expected": "No. The PMI exam fee is extra: $405 for PMI members, $575 for non-members.", "doc": "Pricing Sheet" },
+  { "id": 3, "question": "If I cancel 10 days before my course starts, what refund do I get?", "expected": "A 50 percent refund, or a free transfer to another date (7 to 13 days notice).", "doc": "Refund" },
+  { "id": 4, "question": "What discount do we get if 5 people from my company enroll in the same course?", "expected": "15 percent off per student (group discount for 3 to 9 people).", "doc": "Pricing Sheet" },
+  { "id": 5, "question": "Can I combine the early bird discount with the alumni discount?", "expected": "No, only one discount can be applied per enrollment.", "doc": "Pricing Sheet" },
+  { "id": 6, "question": "When does the Python for Data Analysis course start in Austin?", "expected": "May 1 (2027), on Saturdays.", "doc": "Schedule" },
+  { "id": 7, "question": "Who teaches SQL Fundamentals?", "expected": "Dr. Priya Raman.", "doc": "Instructor Bios" },
+  { "id": 8, "question": "How long can I watch recordings of online classes?", "expected": "60 days after the course ends, in the Brightpath Learning Portal.", "doc": "FAQ" },
+  { "id": 9, "question": "What do I need to do to get a certificate?", "expected": "Attend at least 80 percent of live sessions and score at least 70 percent on the final assessment.", "doc": "Catalog|FAQ" },
+  { "id": 10, "question": "How much does private on-site team training cost?", "expected": "$5,900 per day on-site, for up to 18 participants.", "doc": "Corporate" },
+  { "id": 11, "question": "What is in the Data Analyst Path bundle and what does it cost?", "expected": "DA-110 (Excel and Power BI), DA-120 (SQL Fundamentals) and DA-210 (Python) for $3,400.", "doc": "Pricing Sheet" },
+  { "id": 12, "question": "Is there parking at the Austin training center?", "expected": "Yes, validated parking in the 4th Street garage for $8 per day.", "doc": "FAQ" },
+  { "id": 13, "question": "How late can I enroll before a course starts?", "expected": "Enrollment closes 3 business days before the course starts (or earlier if full).", "doc": "Enroll" },
+  { "id": 14, "question": "Is the exam voucher included in the Agile Scrum Master course?", "expected": "Yes, the PSM I exam voucher is included in the $1,195 fee.", "doc": "Catalog|Pricing Sheet" },
+  { "id": 15, "question": "Can a colleague take my place if I can't attend?", "expected": "Yes, at any time at no extra charge; email the new student's name to enroll@brightpathtraining.example.", "doc": "Refund" },
+  { "id": 16, "question": "What is the Wi-Fi password at the Austin training center?", "outOfScope": true },
+  { "id": 17, "question": "Do you help graduates find a job after the course?", "outOfScope": true },
+  { "id": 18, "question": "What is the name of Brightpath's CEO?", "outOfScope": true },
+  { "id": 19, "question": "Can Brightpath sponsor a student visa for international students?", "outOfScope": true },
+  { "id": 20, "question": "What was Brightpath's revenue last year?", "outOfScope": true }
+]

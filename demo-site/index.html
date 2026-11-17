@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+  A stand-in for the training company's own website (e.g. a WordPress site),
+  served from a different origin to prove the widget embeds anywhere.
+    1. Change WIDGET_ORIGIN in the script tag below to your deployment (or http://localhost:3000).
+    2. Serve this folder:  npx serve demo-site   (opens on http://localhost:3000 or the next free port)
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brightpath Training — Professional courses in Austin and online</title>
+  <style>
+    :root { --ink:#1C2A4A; --slate:#5A6478; --rule:#DCE0E7; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Georgia, "Times New Roman", serif; color:var(--ink); background:#fff; }
+    header { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; padding:18px 24px; border-bottom:1px solid var(--rule); font-family:system-ui, sans-serif; }
+    header strong { font-size:18px; }
+    nav { display:flex; gap:18px; font-size:15px; color:var(--slate); }
+    main { max-width:760px; margin:0 auto; padding:56px 24px 120px; }
+    h1 { font-size:clamp(30px,5vw,46px); line-height:1.1; margin:0 0 18px; }
+    p { font-size:18px; line-height:1.65; color:#333; }
+    ul { padding-left:20px; line-height:1.9; font-size:17px; }
+    .note { margin-top:48px; padding:14px 16px; border:1px dashed var(--rule); font:14px/1.5 system-ui, sans-serif; color:var(--slate); }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Brightpath Training</strong>
+    <nav><span>Courses</span><span>Schedule</span><span>Corporate</span><span>Contact</span></nav>
+  </header>
+  <main>
+    <h1>Professional training that fits around your job.</h1>
+    <p>Live courses in project management, data analytics, digital marketing and leadership, taught online and at our Austin training center since 2015.</p>
+    <ul>
+      <li>PMP Exam Prep Bootcamp, 5 days</li>
+      <li>Python for Data Analysis, 6 Saturdays</li>
+      <li>Digital Marketing Professional, 8 weeks</li>
+      <li>New Manager Essentials, 3 days</li>
+    </ul>
+    <p>Questions about prices, dates or refunds? Use the chat button in the corner.</p>
+    <p class="note">Demo page for the DocuMind widget. This page is plain HTML on a separate origin; the chat loads in an iframe from the DocuMind app.</p>
+  </main>
+
+  <script src="http://localhost:3000/widget.js" defer data-label="Ask about courses"></script>
+</body>
+</html>

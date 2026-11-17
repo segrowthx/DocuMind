@@ -1,0 +1,284 @@
+{
+  "summary": {
+    "model": "gemini-3.8-flash",
+    "embeddingModel": "gemini-embedding-001",
+    "rerank": false,
+    "date": "2026-11-17",
+    "total": "20/20",
+    "inScope": "15/15",
+    "citedExpectedDoc": "15/15",
+    "refusedOutOfScope": "5/5"
+  },
+  "results": [
+    {
+      "id": 1,
+      "question": "How much does the PMP Exam Prep Bootcamp cost?",
+      "expected": "$1,895 per student; the PMI exam fee is not included.",
+      "doc": "Pricing Sheet",
+      "answer": "The PMP Exam Prep Bootcamp costs $1,895 [1]. Please note that the PMI exam fee ($405 for PMI members, $575 for non-members) is not included in the course price [1].",
+      "citedTitles": [
+        "Pricing Sheet 2027 p.1"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot correctly states the price and mentions that the PMI exam fee is not included."
+    },
+    {
+      "id": 2,
+      "question": "Is the PMI exam fee included in the PMP bootcamp price?",
+      "expected": "No. The PMI exam fee is extra: $405 for PMI members, $575 for non-members.",
+      "doc": "Pricing Sheet",
+      "answer": "No, the PMI exam fee is not included in the PMP Exam Prep Bootcamp price [1]. The bootcamp costs $1,895, and the PMI exam fee is $405 for PMI members or $575 for non-members [1].",
+      "citedTitles": [
+        "Pricing Sheet 2027 p.1"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot correctly states that the exam fee is not included and provides the exact fees for members and non-members."
+    },
+    {
+      "id": 3,
+      "question": "If I cancel 10 days before my course starts, what refund do I get?",
+      "expected": "A 50 percent refund, or a free transfer to another date (7 to 13 days notice).",
+      "doc": "Refund",
+      "answer": "If you cancel 7 to 13 calendar days before the course start date, you will receive a 50 percent refund, or you may choose a free transfer to another date [1]. Refunds are issued to your original payment method within 10 business days of the request [1].",
+      "citedTitles": [
+        "Refund, Cancellation and Transfer Policy"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot correctly identifies the 50 percent refund or free transfer option applicable to a cancellation made 10 days in advance."
+    },
+    {
+      "id": 4,
+      "question": "What discount do we get if 5 people from my company enroll in the same course?",
+      "expected": "15 percent off per student (group discount for 3 to 9 people).",
+      "doc": "Pricing Sheet",
+      "answer": "You receive a 15 percent discount per student when 3 to 9 people from the same organisation enroll in the same course [2]. Please note that only one discount can be applied per enrollment and discounts cannot be combined [2]. \n\nIf you would like, an enrollment advisor can contact you to help set up your team's enrollment.",
+      "citedTitles": [
+        "Pricing Sheet 2027 p.2"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot correctly states that groups of 3 to 9 people receive a 15 percent discount per student."
+    },
+    {
+      "id": 5,
+      "question": "Can I combine the early bird discount with the alumni discount?",
+      "expected": "No, only one discount can be applied per enrollment.",
+      "doc": "Pricing Sheet",
+      "answer": "No, discounts cannot be combined [1]. Only one discount can be applied per enrollment [1].",
+      "citedTitles": [
+        "Pricing Sheet 2027 p.2"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot correctly answers that discounts cannot be combined and only one can be applied per enrollment."
+    },
+    {
+      "id": 6,
+      "question": "When does the Python for Data Analysis course start in Austin?",
+      "expected": "May 1 (2027), on Saturdays.",
+      "doc": "Schedule",
+      "answer": "The Python for Data Analysis course in Austin starts on May 1 [1]. Classes meet on Saturdays from 9:00 am to 1:00 pm Central Time [1, 2].",
+      "citedTitles": [
+        "Course Schedule Jan-Jun 2027 p.2",
+        "Course Catalog 2027 p.3"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot correctly identifies the start date as May 1 and specifies that classes meet on Saturdays."
+    },
+    {
+      "id": 7,
+      "question": "Who teaches SQL Fundamentals?",
+      "expected": "Dr. Priya Raman.",
+      "doc": "Instructor Bios",
+      "answer": "Dr. Priya Raman teaches SQL Fundamentals [1].",
+      "citedTitles": [
+        "Instructor Bios p.2"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot correctly identifies Dr. Priya Raman as the teacher."
+    },
+    {
+      "id": 8,
+      "question": "How long can I watch recordings of online classes?",
+      "expected": "60 days after the course ends, in the Brightpath Learning Portal.",
+      "doc": "FAQ",
+      "answer": "Recordings of each online session are available in the Brightpath Learning Portal for 60 days after the course ends [1].",
+      "citedTitles": [
+        "FAQ"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot answer accurately includes all key facts from the reference answer."
+    },
+    {
+      "id": 9,
+      "question": "What do I need to do to get a certificate?",
+      "expected": "Attend at least 80 percent of live sessions and score at least 70 percent on the final assessment.",
+      "doc": "Catalog|FAQ",
+      "answer": "To earn a digital Brightpath Certificate, you must attend at least 80 percent of the live sessions and score 70 percent or higher on the final assessment [2, 4]. Your certificate will be issued within 5 business days of completing the requirements [2].",
+      "citedTitles": [
+        "FAQ",
+        "Course Catalog 2027 p.1"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot accurately states both the attendance and final assessment score requirements."
+    },
+    {
+      "id": 10,
+      "question": "How much does private on-site team training cost?",
+      "expected": "$5,900 per day on-site, for up to 18 participants.",
+      "doc": "Corporate",
+      "answer": "Private on-site team training costs $5,900 per day for up to 18 participants [1]. Instructor travel is included for on-site delivery within Texas, while travel outside Texas is billed at cost [1].",
+      "citedTitles": [
+        "Corporate and Group Training"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot provides the exact price and participant limit from the reference answer, along with compatible extra details."
+    },
+    {
+      "id": 11,
+      "question": "What is in the Data Analyst Path bundle and what does it cost?",
+      "expected": "DA-110 (Excel and Power BI), DA-120 (SQL Fundamentals) and DA-210 (Python) for $3,400.",
+      "doc": "Pricing Sheet",
+      "answer": "The Data Analyst Path bundle includes Data Analytics with Excel and Power BI (DA-110), SQL Fundamentals (DA-120), and Python for Data Analysis (DA-210) [1, 2]. The bundle costs $3,400, saving $495 compared to individual course prices [1].",
+      "citedTitles": [
+        "Pricing Sheet 2027 p.2",
+        "Pricing Sheet 2027 p.1"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot accurately lists all three courses included in the bundle and the correct price of $3,400."
+    },
+    {
+      "id": 12,
+      "question": "Is there parking at the Austin training center?",
+      "expected": "Yes, validated parking in the 4th Street garage for $8 per day.",
+      "doc": "FAQ",
+      "answer": "Yes, validated parking is available in the 4th Street garage for $8 per day [1]. The Austin training center is also a 5-minute walk from the Congress Avenue bus stops [1].",
+      "citedTitles": [
+        "FAQ"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot includes all key facts from the reference answer without contradiction."
+    },
+    {
+      "id": 13,
+      "question": "How late can I enroll before a course starts?",
+      "expected": "Enrollment closes 3 business days before the course starts (or earlier if full).",
+      "doc": "Enroll",
+      "answer": "Enrollment closes 3 business days before a course starts, or earlier if the class is full [1]. If your company is paying by purchase order, the PO must be submitted at least 10 business days before the course starts [2].",
+      "citedTitles": [
+        "How to Enroll p.2",
+        "How to Enroll p.1"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot accurately provides the key deadline and conditions from the reference answer."
+    },
+    {
+      "id": 14,
+      "question": "Is the exam voucher included in the Agile Scrum Master course?",
+      "expected": "Yes, the PSM I exam voucher is included in the $1,195 fee.",
+      "doc": "Catalog|Pricing Sheet",
+      "answer": "Yes, the Professional Scrum Master I (PSM I) exam voucher is included in the course fee for the Agile Scrum Master Certification [1, 3].",
+      "citedTitles": [
+        "Pricing Sheet 2027 p.1",
+        "Course Catalog 2027 p.2"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot correctly confirms that the PSM I exam voucher is included in the course fee."
+    },
+    {
+      "id": 15,
+      "question": "Can a colleague take my place if I can't attend?",
+      "expected": "Yes, at any time at no extra charge; email the new student's name to enroll@brightpathtraining.example.",
+      "doc": "Refund",
+      "answer": "Yes, a colleague may take your place at any time at no extra charge [1]. To make the substitution, simply email the new student's name to enroll@brightpathtraining.example [1].",
+      "citedTitles": [
+        "Refund, Cancellation and Transfer Policy"
+      ],
+      "refused": false,
+      "pass": true,
+      "cited": true,
+      "reason": "The chatbot answer includes all key facts from the reference answer accurately."
+    },
+    {
+      "id": 16,
+      "question": "What is the Wi-Fi password at the Austin training center?",
+      "outOfScope": true,
+      "answer": "I don't know. That isn't covered in the Brightpath Training documents I have access to. You can reach the team at hello@brightpathtraining.example or (512) 555-0142.",
+      "citedTitles": [],
+      "refused": true,
+      "pass": true,
+      "cited": null,
+      "reason": "Refused as expected"
+    },
+    {
+      "id": 17,
+      "question": "Do you help graduates find a job after the course?",
+      "outOfScope": true,
+      "answer": "I don't know. That isn't covered in the Brightpath Training documents I have access to. You can reach the team at hello@brightpathtraining.example or (512) 555-0142.",
+      "citedTitles": [],
+      "refused": true,
+      "pass": true,
+      "cited": null,
+      "reason": "Refused as expected"
+    },
+    {
+      "id": 18,
+      "question": "What is the name of Brightpath's CEO?",
+      "outOfScope": true,
+      "answer": "I don't know. That isn't covered in the Brightpath Training documents I have access to. You can reach the team at hello@brightpathtraining.example or (512) 555-0142.",
+      "citedTitles": [],
+      "refused": true,
+      "pass": true,
+      "cited": null,
+      "reason": "Refused as expected"
+    },
+    {
+      "id": 19,
+      "question": "Can Brightpath sponsor a student visa for international students?",
+      "outOfScope": true,
+      "answer": "I don't know. That isn't covered in the Brightpath Training documents I have access to. You can reach the team at hello@brightpathtraining.example or (512) 555-0142.",
+      "citedTitles": [],
+      "refused": true,
+      "pass": true,
+      "cited": null,
+      "reason": "Refused as expected"
+    },
+    {
+      "id": 20,
+      "question": "What was Brightpath's revenue last year?",
+      "outOfScope": true,
+      "answer": "I don't know. That isn't covered in the Brightpath Training documents I have access to. You can reach the team at hello@brightpathtraining.example or (512) 555-0142.",
+      "citedTitles": [],
+      "refused": true,
+      "pass": true,
+      "cited": null,
+      "reason": "Refused as expected"
+    }
+  ]
+}
